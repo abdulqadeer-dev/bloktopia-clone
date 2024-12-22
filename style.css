@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: #fff;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+:root {
+    --primary-color: #ec00bf;
+    --secondary-color: #fff;
+    --text-color: #fff;
+    --btn-bg-color: #171717;
+}
+
+/*----- Components -----*/
+
+.solid-btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    display: block;
+    width: fit-content;
+
+    &:hover {
+        background-color: #A80089;
+        transition: .3s;
+    }
+}
+
+.outline-btn {
+    background-color: var(--btn-bg-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    border: 1.5px solid var(--primary-color);
+    display: block;
+    width: fit-content;
+    z-index: 111;
+
+    &:hover {
+        background-color: var(--primary-color);
+        transition: .3s;
+        color: var(--text-color);
+    }
+
+}
+
+/*----- header -----*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 2%;
+    align-items: center;
+    width: 100%;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.nav span i {
+    color: var(--primary-color);
+    font-size: 23px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .3s;
+    
+    &:hover {
+        color: var(--primary-color);
+        transition: .3s;
+    }
+}
+
+/*----- hero -----*/
+
+.hero-main {
+    display: flex;
+    justify-content: center;
+    padding: 120px 10%;
+    width: 100%;
+    gap: 5%;
+}
+
+.hero-left {
+    width: 50%;
+}
+
+.hero-left img {
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #4a4a4a;
+}
+
+.hero-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-right h1 {
+    width: 70%;
+}
+
+.hero-right span {
+    color: var(--primary-color);
+}
+
+.hero-right h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+.hero-right button {
+    padding: 10px 70px;
+}
+
+/*----- what-is-bloktopia -----*/
+
+.what-bloktopia-main {
+    width: 100%;
+    padding: 0px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.bloktopia-right {
+    width: calc(100%/3);
+}
+
+.bloktopia-right img {
+    width: 40vw;
+}
+
+.bloktopia-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: calc(100%/3);
+}
+
+.vr {
+    height: 100%;
+}
+
+.bloktopia-middle h4 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-align: center;
+    width: 70%;
+}
+
+.bloktopia-middle p {
+    text-align: center;
+}
+
+.bloktopia-left {
+    width: calc(100%/3);
+}
+
+.bloktopia-left img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/*----- background-video -----*/
+
+.bg-video-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;    
+}
+
+.bg-video-main video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*----- cards -----*/
+
+.cards-main {
+    width: 100%;
+    padding: 0px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;  
+}
+
+.cards-top, .cards-bottom {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    border: 1.5px solid #4a4a4a;
+    width: 49%;
+    border-radius: 10px;
+    padding: 50px 20px 30px 20px;
+    height: 300px;
+    background-image: url(./assets/card-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transition: transform 2s ease, background-size 2s ease;
+    
+    &:hover {
+        background-size: 110%;
+        transition: transform 2s ease, background-size 2s ease;
+    }
+}
+
+.card button {
+    padding: 10px 30px;
+}
+
+.card-2 {
+    background-image: url(./assets/card-2.jpg);
+}
+
+.card-3 {
+    background-image: url(./assets/card-3.jpg);
+}
+
+.card-4 {
+    background-image: url(./assets/card-4.jpg);
+}
+
+.card::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-color: #00000043;
+}
+
+.card h4 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    z-index: 111;
+}
+
+.card div {
+    z-index: 111;
+}
+
+.card p {
+    text-align: center;
+}
+
+.icon-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon-span i {
+    font-size: 22px;
+}
+
+/*----- footer -----*/
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #171717;
+    border-top: 1.5px solid #4a4a4a;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+.f-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.f-icons i {
+    font-size: 30px;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--primary-color);
+        transition: .3s;
+    }
+}
+
+.terms-condition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.terms-condition a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.f-para {
+    font-size: 10px;
+    text-align: center;
+    padding: 20px 0px;
+    width: 70%;
+}
+
+.owned {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
